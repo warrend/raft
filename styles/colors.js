@@ -14,8 +14,9 @@ export const styles = {
   },
   fontColor: {
     primary: black,
-    mainHeader: black,
-    secondaryHeader: green,
+    header: white,
+    mainHeading: black,
+    secondaryHeading: green,
     header: green,
     progress: green,
     page: black,
