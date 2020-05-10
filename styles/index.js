@@ -5,7 +5,7 @@ const black = '#222222';
 const borderRadius = 10;
 // const boxShadow = '';
 
-export const styles = {
+export const theme = {
   backgroundColor: {
     primary: green,
     button: green,

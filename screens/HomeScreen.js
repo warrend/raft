@@ -1,20 +1,30 @@
-import React, { useEffect } from 'react';
-import { View, Text } from 'react-native';
+import React, { useEffect, useContext } from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+import { ThemeContext } from 'styled-components';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { fetchCompletedAction } from '../actions/projectActions';
 
-
 function HomeScreen({ fetchCompleted }) {
   useEffect(() => {
     fetchCompleted()
-  }, [])
+  }, []);
+
+  const theme = useContext(ThemeContext);
+  const { wrapper } = styles(theme);
   return (
-    <View>
+    <View style={wrapper}>
       <Text>This is the home screen</Text>
     </View>
   )
 }
+
+const styles = theme => StyleSheet.create({
+  wrapper: {
+    flex: 1,
+    backgroundColor: theme.backgroundColor.primary, 
+  },
+});
 
 function mapStateToProps(state) {
   return {
