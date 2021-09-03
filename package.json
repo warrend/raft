@@ -12,7 +12,7 @@
     "@react-navigation/native": "^5.2.3",
     "@react-navigation/stack": "^5.2.18",
     "expo": "~37.0.3",
-    "immer": "^8.0.1",
+    "immer": "^9.0.6",
     "mem": "^4.0.0",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
